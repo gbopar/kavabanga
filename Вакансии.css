@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFE4E1;
+}
+
+header {
+  background-color: #333;
+  color: #FFF;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+body { font-family: Arial, sans-serif; }
+    .container { width: 80%; margin: 0 auto; }
+    .vacancy { border: 2px solid #000; padding: 20px; margin-bottom: 20px; }
+    .vacancy img { width: 200px; float: left; margin-right: 20px;}
+     .vacancy h2 { font-size: 24px; margin-top: 0; }
+     .vacancy p { margin-bottom: 20px; }
+     .button { padding: 10px 20px; background-color: #FF5733; color: #fff; border: none; cursor: pointer; }
+     .button:hover { background-color: #FFA07A; }

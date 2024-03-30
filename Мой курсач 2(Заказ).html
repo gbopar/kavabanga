@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Заказ.css">
+  <title>Заказ пиццы</title>
+</head>
+<body>
+<header>
+    <nav>
+      <ul>
+       <li><a href="Мой курсач 1(главная).html">Главная</a></li>
+        <li><a href="Мой курсач 3(Меню).html">Меню</a></li>
+        <li><a href="Мой курсач 2(Заказ).html">Заказать</a></li>
+        <li><a href="Мой курсач 4(Контакты).html">Контакты</a></li>
+        <li><a href="Мой курсач 5(Новости).html">Новости</a></li>
+        <li><a href="Мой курсач 6(Описание и История).html">Описание и История</a></li>
+        <li><a href="Мой курсач 7(Личный Кабинет).html">Личный Кабинет</a></li>
+        <li><a href="Мой курсач 8(Вакансии).html">Информация о вакансиях</a></li>
+        <li><a href="Мой курсач 9(Отзывы).html">Отзывы</a></li>
+        <li><a href="Мой курсач 10(Рецепт).html">Рецепт</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<h1 class="bodyy">Заказать пиццу</h1>
+<form class="bodyy" id="orderForm">
+  <label for="name">Имя:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="phone">Телефон:</label><br>
+  <input type="text" id="phone" name="phone"><br>
+  <label for="address">Адрес:</label><br>
+  <input type="text" id="address" name="address"><br>
+  <label for="pizza">Выбор пиццы:</label><br>
+  <select id="pizza" name="pizza">
+    <option value="margarita">Маргарита</option>
+    <option value="pepperoni">Пепперони</option>
+    <option value="vegetarian">Баварская</option>
+    <option value="hawaiian">Охотничья</option>
+    <option value="vegetarian">Суприм</option>
+    <option value="hawaiian">Четыре сыра</option>
+  </select><br>
+  <button id="orderBtn">Заказать</button>
+
+</form>
+<div id="orderStatus" class="order-status"></div>
+<script >
+    document.getElementById('orderForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Предотвращение перезагрузки страницы при отправке формы
+        document.getElementById('orderStatus').style.display = 'block';
+        document.getElementById('orderStatus').textContent = 'Заказ оформлен! Ожидайте))).';
+    });
+</script>
+
+</body>
+</html>
